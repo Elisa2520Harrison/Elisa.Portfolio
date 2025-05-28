@@ -5,17 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
     <title>Elisa-Portfolio</title>
+    <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
-    <header class=" bg-white h-[50vh] md:h-screen px-6 md:px-16 py-4 ">
+    <header class=" bg-white h-[50vh] md:h-screen px-6 md:px-4 pt-20">
         <!-- Navbar -->
-        <nav class=" fixed top-0 left-0 w-full bg-[#02AFB0] text-white flex justify-around items-center  h-16 px-6 ">
-            <p class="font-bold text-lg">Yelisa.dev</p>
-            
-            
+        <nav class=" fixed top-0 left-0 w-full bg-[#02AFB0] text-white flex justify-between items-center  h-12 px-4 ">
+            <div class="pl-4 md:pl-16">
+                <img src="./images/finlog.png" alt="My Logo" class="w-35  " />
+            </div>
+            <ul class="hidden md:flex justify-center items-center gap-6 w-full text-sm font-medium">
+                <li><a href="#home" class="hover:text-[#272341] ">Home</a></li>
+                <li><a href="#about" class="hover:text-[#272341] ">About</a></li>
+                <li><a href="#services" class="hover:text-[#272341] ">Services</a></li>
+                <li><a href="#resume" class="hover:text-[#272341] ">Resume</a></li>
+                <li><a href="#contact" class="hover:text-[#272341] ">Contact</a></li>
+            </ul>
+
 
         </nav>
         <div class="flex flex-col md:flex-row items-center h-full">
@@ -24,48 +32,16 @@
                 <h1 class="text-[#272341] text-3xl md:text-6xl">Hi, my name is <span class="text-[#01BEAE] italic">
                         Elizabeth Harrison</span></h1>
                 <h1 class="text-[#272341] text-3xl md:text-6xl mt-2">I'm a Web Developer.</h1>
+                <button
+                    class="bg-white text-[#01BEAE]  border border-[#01BEAE] shadow-md px-2 py-2 w-34 mx-auto md:mx-0 rounded">
+                    Know More
+                </button>
+
             </div>
             <div class="flex items-center justify-center w-full md:w-1/2 px-6 pt-12 md:pt-0">
                 <img src="./images/bgimg.jpg" alt="my photo"
-                    class="w-full max-w-xs md:max-w-md lg:max-w-lg object-contain" />
+                    class="w-full max-w-[320px] md:max-w-[380px] lg:max-w-[420px] object-contain" />
             </div>
-
-<!--  
-<nav class="fixed top-0 left-0 w-full bg-[#02AFB0] text-white flex justify-around items-center h-16 px-6 shadow-md z-50">
-  <p class="font-bold text-lg">MyLogo</p>
-  <ul class="flex gap-4 text-sm">
-    <li>Home</li>
-    <li>About</li>
-    <li>Contact</li>
-  </ul>
-</nav>
-
-<!-- Header Content -->
-<!-- <header class="bg-white min-h-[50vh] md:h-screen px-6 md:px-16 pt-24 md:pt-32"> -->
-    
-  <!-- <div class="flex flex-col md:flex-row items-center h-full">
-    <!-- Text -->
-    <!-- <div class="flex flex-col justify-center items-start text-left font-mono md:font-serif w-full md:w-1/2"> -->
-      <!-- <h1 class="text-[#272341] text-3xl md:text-6xl"> -->
-        <!-- Hi, my name is <span class="text-[#01BEAE] italic">Elizabeth Harrison</span> -->
-      <!-- </h1> -->
-      <!-- <h1 class="text-[#272341] text-3xl md:text-6xl mt-2">I'm a Web Developer.</h1> -->
-    <!-- </div> -->
-
-    <!-- Image -->
-    <!-- <div class="flex items-center justify-center w-full md:w-1/2 px-6 pt-12 md:pt-0"> -->
-      <!-- <img -->
-        <!-- src="./images/bgimg.jpg" -->
-        <!-- alt="My photo" -->
-        <!-- class="w-full max-w-xs md:max-w-md lg:max-w-lg object-contain" -->
-      <!-- /> -->
-    <!-- </div> -->
-  <!-- </div> -->
-<!-- </header> --> -->
-
-
-
-
 
 
     </header>
