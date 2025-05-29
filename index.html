@@ -2,115 +2,159 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Elisa-Portfolio</title>
-    <script src="scripts/index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Elisa-Portfolio</title>
+  <script src="scripts/index.js" defer></script>
+
 </head>
 
 <body>
-    <header class=" bg-white h-[50vh] md:h-screen px-6 md:px-4 pt-20">
-        <!-- Navbar -->
-        <nav class=" fixed top-0 left-0 w-full bg-[#02AFB0] text-white flex justify-between items-center  h-12 px-4 ">
-            <div class="pl-4 md:pl-16">
-                <img src="./images/finlog.png" alt="My Logo" class="w-35  cursor-pointer " />
-            </div>
-            <ul class="hidden md:flex justify-center items-center gap-6 w-full text-sm font-medium">
-                <li><a href="#home" class="hover:text-[#272341] ">Home</a></li>
-                <li><a href="#about" class="hover:text-[#272341] ">About</a></li>
-                <li><a href="#services" class="hover:text-[#272341] ">Services</a></li>
-                <li><a href="#resume" class="hover:text-[#272341] ">Resume</a></li>
-                <li><a href="#contact" class="hover:text-[#272341] ">Contact</a></li>
-            </ul>
+  <header class=" bg-white min-h-screen md:h-screen px-6 md:px-4 pt-20">
+    <!-- Navbar -->
+    <nav class=" fixed top-0 left-0 w-full bg-[#02AFB0] text-white flex justify-between items-center  h-12 px-4 ">
+      <div class="pl-4 md:pl-16">
+        <img src="./images/finlog.png" alt="My Logo" class="w-35  cursor-pointer " />
+      </div>
+      <ul class="hidden md:flex justify-center items-center gap-6 w-full text-sm font-medium">
+        <li><a href="#home" class="hover:text-[#272341] ">Home</a></li>
+        <li><a href="#about" class="hover:text-[#272341] ">About</a></li>
+        <li><a href="#services" class="hover:text-[#272341] ">Services</a></li>
+        <li><a href="#resume" class="hover:text-[#272341] ">Portfolios</a></li>
+        <li><a href="#contact" class="hover:text-[#272341] ">Contact</a></li>
+      </ul>
 
-
-        </nav>
-        <div class="flex flex-col md:flex-row items-center h-full">
-            <div class="flex flex-col justify-center items-start text-left font-mono md:font-serif pl-6 md:pl-16
+    </nav>
+    <div class="flex flex-col md:flex-row items-center h-full">
+      <div class="flex flex-col justify-center items-start text-left font-mono md:font-serif pl-6 md:pl-16
                  w-full md:w-1/2">
-                <h1 class="text-[#272341] text-3xl md:text-6xl">Hi, my name is <span class="text-[#01BEAE] italic">
-                        Elizabeth Harrison</span></h1>
-                <h1 class="text-[#272341] text-3xl md:text-6xl mt-2">I'm a Web Developer.</h1>
-                <a href="#" class="bg-white text-[#01BEAE]  border border-[#01BEAE] shadow-md px-2 py-2
+        <h1 class="text-[#272341] text-3xl md:text-6xl">Hi, my name is <span class="text-[#01BEAE] italic">
+            Elizabeth Harrison</span></h1>
+        <h1 class="text-[#272341] text-3xl md:text-6xl mt-2">I'm a Web Developer.</h1>
+        <a href="#" class="bg-white text-[#01BEAE]  border border-[#01BEAE] shadow-md px-2 py-2
                      w-34 mx-auto md:mx-0 rounded cursor-pointer ">
-                    Know More
-                </a>
-                </button>
+          Know More
+        </a>
 
-            </div>
-            <div class="flex items-center justify-center w-full md:w-1/2 px-6 pt-12 md:pt-0">
-                <img src="./images/bgimg.jpg" alt="my photo"
-                    class="lg:max-w-[420px] object-containw-full max-w-[320px] md:max-w-[380px]">
-            </div>
-    </header>
-    <section class="bg-[#02AFB0] mt-16 pt-20 px-6 md:px-12 h-auto">
-        <div class="text-white font-bold text-3xl font-mono text-center mb-10">
-            <h1>ABOUT ME</h1>
+      </div>
+      <div class="flex items-center justify-center w-full md:w-1/2 px-6 pt-12 md:pt-0">
+        <img src="./images/bgimg.jpg" alt="my photo"
+          class="lg:max-w-[420px] object-containw-full max-w-[320px] md:max-w-[380px]">
+      </div>
+  </header>
+
+  <section class="bg-[#02AFB0] mt-6 pt-20 px-6 md:px-12 h-auto">
+    <div class="text-white font-bold text-3xl font-mono text-center mb-10">
+      <h1>ABOUT ME</h1>
+    </div>
+    <div class="flex flex-col md:flex-row items-center md:items-start justify-center gap-10 md:gap-16">
+      <div class="flex justify-center md:justify-start w-full md:w-1/2 md:pl-4">
+        <img src="./images/profile3.jpg" alt="abt-image"
+          class="w-full max-w-[320px] md:max-w-[380px] lg:max-w-[420px] object-contain mb-12 md:ml-25">
+      </div>
+      <div class="text-white font-mono md:font-serif text-left w-full md:w-1/2  md:mr-30 md:mt-20">
+        <p>
+          I'm Elizabeth Harrison, a passionate web developer with a love for creating clean, responsive,
+          and user-friendly websites. I enjoy turning ideas into beautiful digital experiences that work
+          seamlessly on any screen.<br>
+
+          I'm skilled at building intuitive user interfaces using modern tools and technologies. My work is
+          focused on designing and developing websites that not only look good but also serve real business
+          goals—from increasing visibility to driving customer engagement.<br>
+
+          Whether it's a simple site or a more complex solution, I aim to build with
+          clarity, creativity, and purpose.<br>
+
+          I’m always looking for new challenges and opportunities to grow. Let’s create something great
+          together.
+        </p>
+        <div class="flex flex-row space-x-4">
+          <a href="#" class="bg-white text-[#01BEAE] border border-[#01BEAE] shadow-md 
+          px-2 py-2 mt-4 w-36 rounded-md cursor-pointer 
+          text-sm font-bold hover:bg-[#01BEAE] hover:text-white transition duration-300">
+            View Resume</a>
+
+          <a href="#" class="bg-white text-[#01BEAE] border border-[#01BEAE] shadow-md 
+          px-2 py-2 mt-4 w-36 rounded-md cursor-pointer 
+          text-sm font-bold hover:bg-[#01BEAE] hover:text-white transition duration-300"> Hire Me</a>
         </div>
-        <div class="flex flex-col md:flex-row items-center md:items-start justify-center gap-10 md:gap-16">
-            <div class="flex justify-center md:justify-end w-full md:w-1/2">
-                <img src="./images/profile3.jpg" alt="abt-image"
-                    class="w-full max-w-[320px] md:max-w-[380px] lg:max-w-[420px] object-contain">
-            </div>
-            <div class="flex flex-col md:flex-row items-center h-full"></div>
-            <div class="text-white font-mono md:font-serif text-left w-full md:w-1/2/2 ">
-                <p>
-                    I'm Elizabeth Harrison, a passionate web developer with a love for creating clean, responsive,
-                    and user-friendly websites. I enjoy turning ideas into beautiful digital experiences that work
-                    seamlessly on any screen. <br>
-                    I'm skilled at building intuitive user interfaces using modern tools and technologies. My work is
-                    focused on designing and developing websites that not only look good but also serve real business
-                    goals
-                    -from increasing visibility to driving customer engagement. <br>
-                    Whether it's a simple site or a more complex solution, I aim to build with
-                    clarity, creativity, and purpose.<br>
-                    I’m always looking for new challenges and opportunities to grow. Let’s create something great
-                    together.
-                </p>
-            </div>
 
-    </section>
+  </section>
+  <section class="bg-white mt-4 pt-20 px-6 md:px-12 h-auto">
+    <div class="text-[#272341] font-bold text-3xl font-mono text-center mb-10">
+      <h1>MY SERVICES</h1>
+      <h1 class="text-2xl md:text-3xl font-medium">
+        Web solutions tailored to <br class="hidden sm:block"> your business goals
+      </h1>
+    </div>
 
+    <div class="py-12 px-4 bg-white">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto w-full">
 
-<section class="bg-[#02AFB0] mt-16 pt-32 px-6 md:px-12">
-  <!-- Section Title -->
-  <div class="text-white font-bold text-3xl font-mono text-center mb-10">
-    <h1>ABOUT ME</h1>
-  </div>
+        <!-- Frontend Development Box -->
+        <div class="border border-[#272341] p-4 rounded-md shadow-sm max-w-sm w-full mx-auto">
+          <h2 class="text-lg font-bold mb-2 text-[#272341]">Frontend Development</h2>
+          <p class="text-base font-bold text-[#02AFB0]">
+            I create clean, user-friendly interfaces <br> that look great on any screen.
+          </p>
+        </div>
 
-  <!-- Content Flex Container -->
-  <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
+        <!-- Landing Pages Box -->
+        <div class="border border-[#272341] p-4 rounded-md shadow-sm max-w-sm w-full mx-auto">
+          <h2 class="text-lg font-bold mb-2 text-[#272341]">Landing Pages and Business Sites</h2>
+          <p class="text-base font-bold text-[#02AFB0]">
+            I design high-converting landing pages <br>that turn visitors into customers.
+          </p>
+        </div>
+
+        <!-- Web Apps Box -->
+        <div class="border border-[#272341] p-4 rounded-md shadow-sm max-w-sm w-full mx-auto">
+          <h2 class="text-lg font-bold mb-2 text-[#272341]">Custom Web Applications</h2>
+          <p class="text-base font-bold text-[#02AFB0]">
+            I build web applications tailored to your <br>business logic and workflows.
+          </p>
+        </div>
+
+        <!-- Brand Logo Box -->
+        <div class="border border-[#272341] p-4 rounded-md shadow-sm max-w-sm w-full mx-auto">
+          <h2 class="text-lg font-bold mb-2 text-[#272341]">Brand Logo and Design</h2>
+          <p class="text-base font-bold text-[#02AFB0]">
+            I craft clean, memorable logos that reflect your <br> brand’s identity and make it stand out.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#02AFB0] mt-2 pt-15 px-6 md:px-12 h-auto">
+    <div>
+      <h6 class="text-white  text-xl font-mono text-center mb-2">PORTFOLIOS</h6>
+      <h3 class="text-white text-4xl font-bold font-mono text-center mb-10 md:text-3xl ">
+        Some of my awesome <br>stuffs here</h3>
+    </div>
+        <div class="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-6 gap-6">
+    <div class="md:w-1/2">
+      <h1 class="text-white font-bold text-xl font-mono">Project Title:Little Explorers School</h1>
+      <h2 class="text-white font-mono md:font-serif text-left w-full md:w-11/12 mt-2">
+         I designed and built a responsive website for a montessori school<br>called Little Explorers. I focused on a fun, clean UI using <br>pure CSS ,and
+        JavaScript for the navbar. I reinforced <br>my layout and design skills, solving challenges proactively
+        throughout.
+      </h2>
+      <a href="https://littleexplores.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-white mt-2 border border-[#272341] text-[#02AFB0] cursor-pointer px-2 py-2 font-mono font-bold
+          hover:bg-[#02AFB0] hover:text-white transition duration-300 inline-block rounded"> See Live</a>
+    </div>
+    <div class="md:w-1/2 flex justify-center">
+      <img src="./images/pexels-yankrukov-8613057.jpg" alt="Project image" 
+      class="w-full max-w-[600px] object-contain">
+    </div>
+  </section>
+
     
-    <!-- Left: Image -->
-    <div class="w-full md:w-1/2 flex justify-center md:justify-end">
-      <img src="./images/profile3.jpg" alt="abt-image"
-        class="w-full max-w-[320px] md:max-w-[380px] lg:max-w-[420px] object-contain" />
-    </div>
-
-    <!-- Right: Text -->
-    <div class="w-full md:w-1/2 text-white font-mono md:font-serif text-left">
-      <p>
-        I'm Elizabeth Harrison, a passionate web developer with a love for creating clean, responsive,
-        and user-friendly websites. I specialize in frontend development, and I enjoy turning ideas into
-        beautiful digital experiences that work seamlessly on any screen. <br><br>
-
-        I'm skilled at building intuitive user interfaces using modern tools and technologies. My work is
-        focused on designing and developing websites that not only look good but also serve real business goals
-        — from increasing visibility to driving customer engagement. <br><br>
-
-        My work includes landing pages, business websites, and custom web applications tailored
-        to meet unique needs. Whether it's a simple site or a more complex solution, I aim to build with
-        clarity, creativity, and purpose. <br><br>
-
-        I’m always looking for new challenges and opportunities to grow. Let’s create something great together.
-      </p>
-    </div>
-  </div>
-</section>
 
 
 
+    
 </body>
 
 </html>
