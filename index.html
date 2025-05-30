@@ -2,159 +2,280 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <title>Elisa-Portfolio</title>
-  <script src="scripts/index.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Elisa-Portfolio</title>
+    <script src="scripts/index.js" defer></script>
 
 </head>
 
 <body>
-  <header class=" bg-white min-h-screen md:h-screen px-6 md:px-4 pt-20">
-    <!-- Navbar -->
-    <nav class=" fixed top-0 left-0 w-full bg-[#02AFB0] text-white flex justify-between items-center  h-12 px-4 ">
-      <div class="pl-4 md:pl-16">
-        <img src="./images/finlog.png" alt="My Logo" class="w-35  cursor-pointer " />
-      </div>
-      <ul class="hidden md:flex justify-center items-center gap-6 w-full text-sm font-medium">
-        <li><a href="#home" class="hover:text-[#272341] ">Home</a></li>
-        <li><a href="#about" class="hover:text-[#272341] ">About</a></li>
-        <li><a href="#services" class="hover:text-[#272341] ">Services</a></li>
-        <li><a href="#resume" class="hover:text-[#272341] ">Portfolios</a></li>
-        <li><a href="#contact" class="hover:text-[#272341] ">Contact</a></li>
-      </ul>
+    <header id="home" class=" bg-white min-h-screen px-6 md:px-4 pt-20">
+        <!-- Navbar -->
+        <nav class=" fixed top-0 left-0 w-full bg-[#02AFB0] text-white flex justify-between items-center  h-12 px-4 ">  
+            <div class="pl-4 md:pl-16">
+                <img src="./images/finlog.png" alt="My Logo" class="w-35  cursor-pointer " />
+            </div>
+            <ul class="hidden md:flex justify-center items-center gap-6 w-full text-sm font-medium">
+                <li><a href="#home" class="hover:text-[#272341] ">Home</a></li>
+                <li><a href="#about" class="hover:text-[#272341] ">About</a></li>
+                <li><a href="#services" class="hover:text-[#272341] ">Services</a></li>
+                <li><a href="#portfolio" class="hover:text-[#272341] ">Portfolio</a></li>
+                <li><a href="#contact" class="hover:text-[#272341] ">Contact</a></li>
+            </ul>
+<!-- mobile menu -->
+             <button id="menu-toggle" ☰ class="md:hidden text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+        <div id="mobile-menu" class="md:hidden absolute top-14 right-4 z-50 bg-white/20 backdrop-blur-md text-white px-6 py-4 hidden  ">
+    <ul class="flex flex-col space-y-4 text-sm font-medium ">
+      <li><a href="#home" class="hover:text-[#272341]">Home</a></li>
+      <li><a href="#about" class="hover:text-[#272341]">About</a></li>
+      <li><a href="#services" class="hover:text-[#272341]">Services</a></li>
+      <li><a href="#portfolio" class="hover:text-[#272341]">Portfolio</a></li>
+      <li><a href="#contact" class="hover:text-[#272341]">Contact</a></li>
+    </ul>
+  </div>
 
-    </nav>
-    <div class="flex flex-col md:flex-row items-center h-full">
-      <div class="flex flex-col justify-center items-start text-left font-mono md:font-serif pl-6 md:pl-16
+        </nav>
+        <div class="flex flex-col md:flex-row items-center h-full">
+            <div class="flex flex-col justify-center items-start text-left font-mono md:font-serif pl-6 md:pl-16
                  w-full md:w-1/2">
-        <h1 class="text-[#272341] text-3xl md:text-6xl">Hi, my name is <span class="text-[#01BEAE] italic">
-            Elizabeth Harrison</span></h1>
-        <h1 class="text-[#272341] text-3xl md:text-6xl mt-2">I'm a Web Developer.</h1>
-        <a href="#" class="bg-white text-[#01BEAE]  border border-[#01BEAE] shadow-md px-2 py-2
+                <h1 class="text-[#272341] text-3xl md:text-6xl">Hi, my name is <span class="text-[#01BEAE] italic">
+                        Elizabeth Harrison</span></h1>
+                <h1 class="text-[#272341] text-3xl md:text-6xl mt-2">I'm a Web Developer.</h1>
+                <a href="#services" class="bg-white text-[#01BEAE]  border border-[#01BEAE] shadow-md px-2 py-2
                      w-34 mx-auto md:mx-0 rounded cursor-pointer ">
-          Know More
-        </a>
+                    Know More
+                </a>
 
-      </div>
-      <div class="flex items-center justify-center w-full md:w-1/2 px-6 pt-12 md:pt-0">
-        <img src="./images/bgimg.jpg" alt="my photo"
-          class="lg:max-w-[420px] object-containw-full max-w-[320px] md:max-w-[380px]">
-      </div>
-  </header>
+            </div>
+            <div class="flex items-center justify-center w-full md:w-1/2 px-6 pt-12 md:pt-0">
+                <img src="./images/bgimg.jpg" alt="my photo"
+                    class="w-full max-w-[320px] md:max-w-[380px] lg:max-w-[420px] h-auto object-contain">
+            </div>
+        </div>
+    </header>
 
-  <section class="bg-[#02AFB0] mt-6 pt-20 px-6 md:px-12 h-auto">
-    <div class="text-white font-bold text-3xl font-mono text-center mb-10">
-      <h1>ABOUT ME</h1>
-    </div>
-    <div class="flex flex-col md:flex-row items-center md:items-start justify-center gap-10 md:gap-16">
-      <div class="flex justify-center md:justify-start w-full md:w-1/2 md:pl-4">
-        <img src="./images/profile3.jpg" alt="abt-image"
-          class="w-full max-w-[320px] md:max-w-[380px] lg:max-w-[420px] object-contain mb-12 md:ml-25">
-      </div>
-      <div class="text-white font-mono md:font-serif text-left w-full md:w-1/2  md:mr-30 md:mt-20">
-        <p>
-          I'm Elizabeth Harrison, a passionate web developer with a love for creating clean, responsive,
-          and user-friendly websites. I enjoy turning ideas into beautiful digital experiences that work
-          seamlessly on any screen.<br>
+    <section id="about" class="bg-[#02AFB0] mt-6 pt-20 px-6 md:px-12 h-auto">
+        <div class="text-white font-bold text-3xl font-mono text-center mb-10">
+            <h1>ABOUT ME</h1>
+        </div>
+        <div class="flex flex-col md:flex-row items-center md:items-start justify-center gap-10 md:gap-16">
+            <div class="flex justify-center md:justify-start w-full md:w-1/2 md:pl-4">
+                <img src="./images/profile3.jpg" alt="abt-image"
+                    class="w-full max-w-[320px] md:max-w-[380px] lg:max-w-[420px] object-contain mb-12 md:ml-25">
+            </div>
+            <div class="text-white font-mono md:font-serif text-left w-full md:w-1/2  md:mr-30 md:mt-20">
+                <p>
+                    I'm Elizabeth Harrison, a passionate web developer with a love for creating clean, responsive,
+                    and user-friendly websites. I enjoy turning ideas into beautiful digital experiences that work
+                    seamlessly on any screen.<br>
 
-          I'm skilled at building intuitive user interfaces using modern tools and technologies. My work is
-          focused on designing and developing websites that not only look good but also serve real business
-          goals—from increasing visibility to driving customer engagement.<br>
+                    I'm skilled at building intuitive user interfaces using modern tools and technologies. My work is
+                    focused on designing and developing websites that not only look good but also serve real business
+                    goals—from increasing visibility to driving customer engagement.<br>
 
-          Whether it's a simple site or a more complex solution, I aim to build with
-          clarity, creativity, and purpose.<br>
+                    Whether it's a simple site or a more complex solution, I aim to build with
+                    clarity, creativity, and purpose.<br>
 
-          I’m always looking for new challenges and opportunities to grow. Let’s create something great
-          together.
-        </p>
-        <div class="flex flex-row space-x-4">
-          <a href="#" class="bg-white text-[#01BEAE] border border-[#01BEAE] shadow-md 
+                    I’m always looking for new challenges and opportunities to grow. Let’s create something great
+                    together.
+                </p>
+                <div class="flex flex-row space-x-4">
+                    <a href="Elizabeth-Harrison-Resume.pdf" target="_blank" rel="noopener noreferrer" class="bg-white text-[#01BEAE] border border-[#01BEAE] shadow-md 
           px-2 py-2 mt-4 w-36 rounded-md cursor-pointer 
           text-sm font-bold hover:bg-[#01BEAE] hover:text-white transition duration-300">
-            View Resume</a>
+                        View Resume</a>
 
-          <a href="#" class="bg-white text-[#01BEAE] border border-[#01BEAE] shadow-md 
+                    <a href="#" class="bg-white text-[#01BEAE] border border-[#01BEAE] shadow-md 
           px-2 py-2 mt-4 w-36 rounded-md cursor-pointer 
           text-sm font-bold hover:bg-[#01BEAE] hover:text-white transition duration-300"> Hire Me</a>
+                </div>
+
+    </section>
+    <section id="services" class="bg-white mt-4 pt-20 px-6 md:px-12 h-auto">
+        <div class="text-[#272341] font-bold text-3xl font-mono text-center mb-10">
+            <h1>MY SERVICES</h1>
+            <h1 class="text-2xl md:text-3xl font-medium">
+                Web solutions tailored to <br class="hidden sm:block"> your business goals
+            </h1>
         </div>
 
-  </section>
-  <section class="bg-white mt-4 pt-20 px-6 md:px-12 h-auto">
-    <div class="text-[#272341] font-bold text-3xl font-mono text-center mb-10">
-      <h1>MY SERVICES</h1>
-      <h1 class="text-2xl md:text-3xl font-medium">
-        Web solutions tailored to <br class="hidden sm:block"> your business goals
-      </h1>
-    </div>
+        <div class="py-12 px-4 bg-white">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto w-full">
 
-    <div class="py-12 px-4 bg-white">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto w-full">
+                <!-- Frontend Development Box -->
+                <div class="border border-[#272341] p-4 rounded-md shadow-sm max-w-sm w-full mx-auto">
+                    <h2 class="text-lg font-bold mb-2 text-[#272341]">Frontend Development</h2>
+                    <p class="text-base font-bold text-[#02AFB0]">
+                        I create clean, user-friendly interfaces <br> that look great on any screen.
+                    </p>
+                </div>
 
-        <!-- Frontend Development Box -->
-        <div class="border border-[#272341] p-4 rounded-md shadow-sm max-w-sm w-full mx-auto">
-          <h2 class="text-lg font-bold mb-2 text-[#272341]">Frontend Development</h2>
-          <p class="text-base font-bold text-[#02AFB0]">
-            I create clean, user-friendly interfaces <br> that look great on any screen.
-          </p>
+                <!-- Landing Pages Box -->
+                <div class="border border-[#272341] p-4 rounded-md shadow-sm max-w-sm w-full mx-auto">
+                    <h2 class="text-lg font-bold mb-2 text-[#272341]">Landing Pages and Business Sites</h2>
+                    <p class="text-base font-bold text-[#02AFB0]">
+                        I design high-converting landing pages <br>that turn visitors into customers.
+                    </p>
+                </div>
+
+                <!-- Web Apps Box -->
+                <div class="border border-[#272341] p-4 rounded-md shadow-sm max-w-sm w-full mx-auto">
+                    <h2 class="text-lg font-bold mb-2 text-[#272341]">Custom Web Applications</h2>
+                    <p class="text-base font-bold text-[#02AFB0]">
+                        I build web applications tailored to your <br>business logic and workflows.
+                    </p>
+                </div>
+
+                <!-- Brand Logo Box -->
+                <div class="border border-[#272341] p-4 rounded-md shadow-sm max-w-sm w-full mx-auto">
+                    <h2 class="text-lg font-bold mb-2 text-[#272341]">Brand Logo and Design</h2>
+                    <p class="text-base font-bold text-[#02AFB0]">
+                        I craft clean, memorable logos that reflect your <br> brand’s identity and make it
+                        stand out.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="bg-[#02AFB0] py-10">
+        <div>
+            <h6 class="text-white text-xl font-mono text-center mb-2">PORTFOLIO</h6>
+            <h3 class="text-white text-4xl font-bold font-mono text-center mb-10 md:text-3xl">
+                Some of my awesome <br>stuffs here
+            </h3>
         </div>
 
-        <!-- Landing Pages Box -->
-        <div class="border border-[#272341] p-4 rounded-md shadow-sm max-w-sm w-full mx-auto">
-          <h2 class="text-lg font-bold mb-2 text-[#272341]">Landing Pages and Business Sites</h2>
-          <p class="text-base font-bold text-[#02AFB0]">
-            I design high-converting landing pages <br>that turn visitors into customers.
-          </p>
-        </div>
-
-        <!-- Web Apps Box -->
-        <div class="border border-[#272341] p-4 rounded-md shadow-sm max-w-sm w-full mx-auto">
-          <h2 class="text-lg font-bold mb-2 text-[#272341]">Custom Web Applications</h2>
-          <p class="text-base font-bold text-[#02AFB0]">
-            I build web applications tailored to your <br>business logic and workflows.
-          </p>
-        </div>
-
-        <!-- Brand Logo Box -->
-        <div class="border border-[#272341] p-4 rounded-md shadow-sm max-w-sm w-full mx-auto">
-          <h2 class="text-lg font-bold mb-2 text-[#272341]">Brand Logo and Design</h2>
-          <p class="text-base font-bold text-[#02AFB0]">
-            I craft clean, memorable logos that reflect your <br> brand’s identity and make it stand out.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-[#02AFB0] mt-2 pt-15 px-6 md:px-12 h-auto">
-    <div>
-      <h6 class="text-white  text-xl font-mono text-center mb-2">PORTFOLIOS</h6>
-      <h3 class="text-white text-4xl font-bold font-mono text-center mb-10 md:text-3xl ">
-        Some of my awesome <br>stuffs here</h3>
-    </div>
+        <!-- First Project -->
         <div class="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-6 gap-6">
-    <div class="md:w-1/2">
-      <h1 class="text-white font-bold text-xl font-mono">Project Title:Little Explorers School</h1>
-      <h2 class="text-white font-mono md:font-serif text-left w-full md:w-11/12 mt-2">
-         I designed and built a responsive website for a montessori school<br>called Little Explorers. I focused on a fun, clean UI using <br>pure CSS ,and
-        JavaScript for the navbar. I reinforced <br>my layout and design skills, solving challenges proactively
-        throughout.
-      </h2>
-      <a href="https://littleexplores.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-white mt-2 border border-[#272341] text-[#02AFB0] cursor-pointer px-2 py-2 font-mono font-bold
-          hover:bg-[#02AFB0] hover:text-white transition duration-300 inline-block rounded"> See Live</a>
-    </div>
-    <div class="md:w-1/2 flex justify-center">
-      <img src="./images/pexels-yankrukov-8613057.jpg" alt="Project image" 
-      class="w-full max-w-[600px] object-contain">
-    </div>
-  </section>
+            <div class="md:w-1/2">
+                <h1 class="text-white font-bold text-xl font-mono">Project Title: Little Explorers School</h1>
+                <h2 class="text-white font-mono md:font-serif text-left w-full md:w-11/12 mt-2">
+                    I designed and built a responsive website for a Montessori school<br>called Little Explorers. I
+                    focused on a fun, clean UI using <br>pure CSS and
+                    JavaScript for the navbar. I reinforced <br>my layout and design skills, solving challenges
+                    proactively throughout.
+                </h2>
+                <a href="https://littleexplores.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-white mt-2 border border-[#272341] text-[#02AFB0] cursor-pointer px-2 py-2 font-mono
+                     font-bold hover:bg-[#02AFB0] hover:text-white transition duration-300 inline-block rounded">
+                    See Live
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="./images/pexels-yankrukov-8613057.jpg" alt="Project image"
+                    class="w-full max-w-[600px] object-contain">
+            </div>
+        </div>
 
-    
+        <!-- Second Project -->
+        <div class="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-6 gap-6">
+            <div class="md:w-1/2">
+                <h1 class="text-white font-bold text-xl font-mono">Project Title: Portfolio Site</h1>
+                <h2 class="text-white font-mono md:font-serif text-left w-full md:w-11/12 mt-2">
+                    I built a responsive food website using HTML, Tailwind CSS, and JavaScript,
+                    showcasing my commitment, adaptability, and problem-solving skills. The
+                    project strengthened my ability to find alternative solutions and create
+                    clean, user-friendly interfaces.
+                </h2>
+                <a href="https://food-fun-red.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    class="bg-white mt-2 border border-[#272341] text-[#02AFB0] cursor-pointer px-2 py-2 font-mono font-bold hover:bg-[#02AFB0] hover:text-white transition duration-300 inline-block rounded">
+                    See Live
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="./images/foodfun.jpg" alt="Portfolio image" class="w-full max-w-[600px] object-contain">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-[#F5F5F5] px-6 md:px-12 py-16">
+        <h2 class="text-3xl font-bold text-center mb-10 text-[#02AFB0] tracking-wide uppercase">Contact Me</h2>
+
+        <form action="https://formspree.io/f/xeokjqab" method="POST"
+            class="max-w-xl mx-auto space-y-6 bg-white p-8 rounded-xl shadow-lg">
+            <!-- Name -->
+            <input type="text" name="name" required placeholder="Your Name"
+                class="w-full px-5 py-3 border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#02AFB0] focus:border-transparent transition" />
+
+            <!-- Email -->
+            <input type="email" name="email" required placeholder="Your Email"
+                class="w-full px-5 py-3 border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#02AFB0] focus:border-transparent transition" />
+
+            <!-- Subject -->
+            <input type="text" name="subject" placeholder="Subject"
+                class="w-full px-5 py-3 border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#02AFB0] focus:border-transparent transition" />
+
+            <!-- Message -->
+            <textarea name="message" required placeholder="Your Message" rows="6"
+                class="w-full px-5 py-3 border border-gray-300 rounded-lg placeholder-gray-400 resize-none focus:outline-none focus:ring-2 focus:ring-[#02AFB0] focus:border-transparent transition"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit"
+                class="w-full bg-[#02AFB0] text-white font-semibold py-3 rounded-lg hover:bg-[#019a9a] transition duration-300 shadow-md focus:outline-none focus:ring-4 focus:ring-[#019a9a]/50">
+                Send Message
+            </button>
+        </form>
+    </section>
+
+
+    <footer class="bg-[#02AFB0]">
+        <div class="mx-auto max-w-7xl py-8 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+            <nav class="-mx-5 -my-2 flex flex-wrap justify-center order-2" aria-label="Footer">
+                <div class="px-5">
+                    <a href="#" class="text-base text-white hover:text-[#272341]">Terms of Service</a>
+                </div>
+
+                <div class="px-5">
+                    <a href="#" class="text-base text-white hover:text-[#272341]">Privacy Policy</a>
+                </div>
+            </nav>
+            <div class="mt-8 md:mb-8 flex justify-center space-x-6 md:order-3  ">
+                <a href="https://www.facebook.com/share/1AXmrQ9xo5/" target="_blank" rel="noopener noreferrer"
+                    class="text-white hover:text-[#272341]">
+                    <span class="sr-only">Facebook</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/in/elizabeth-harrison-495288197/" target="_blank"
+                    rel="noopener noreferrer" class="text-white hover:text-[#272341]">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM7.5 8h3.64v2.16h.05c.51-.96 1.76-1.97 3.63-1.97 3.89 0 4.61 2.56 4.61 5.89V24h-4v-8.31c0-1.98-.04-4.53-2.76-4.53-2.76 0-3.18 2.16-3.18 4.39V24h-4V8z" />
+                    </svg>
+                </a>
+
+                <a href="https://github.com/Elisa2520Harrison" target="_blank" rel="noopener noreferrer"
+                    class="text-white hover:text-[#272341]">
+                    <span class="sr-only">GitHub</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+            <div class="mt-8  md:order-1 md:mt-0 ">
+                <p class="text-center text-base text-white">
+                    &copy; Yelisa.dev 2025
+                </p>
+            </div>
+        </div>
+    </footer>
 
 
 
-    
 </body>
 
 </html>
