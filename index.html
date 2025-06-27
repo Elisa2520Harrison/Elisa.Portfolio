@@ -13,7 +13,8 @@
 <body>
     <header id="home" class="bg-white min-h-screen px-6 md:px-4 pt-[56px]">
         <!-- Navbar -->
-        <nav class="fixed top-0 left-0 w-full bg-[#02AFB0] text-white flex justify-between items-center h-14 px-4 z-50 ">  
+        <nav
+            class="fixed top-0 left-0 w-full bg-[#02AFB0] text-white flex justify-between items-center h-14 px-4 z-50 ">
             <div class="pl-4 md:pl-16">
                 <img src="./images/finlog.png" alt="My Logo" class="w-35  cursor-pointer " />
             </div>
@@ -24,22 +25,23 @@
                 <li><a href="#portfolio" class="hover:text-[#272341] ">Portfolio</a></li>
                 <li><a href="#contact" class="hover:text-[#272341] ">Contact</a></li>
             </ul>
-<!-- mobile menu -->
-             <button id="menu-toggle" ☰ class="md:hidden text-white focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
-        <div id="mobile-menu" class="md:hidden absolute top-14 right-4 z-50 bg-[#02AFB0] text-white px-6 py-4 hidden  ">
-    <ul class="flex flex-col space-y-4 text-sm font-medium ">
-      <li><a href="#home" class="hover:text-[#272341]">Home</a></li>
-      <li><a href="#about" class="hover:text-[#272341]">About</a></li>
-      <li><a href="#services" class="hover:text-[#272341]">Services</a></li>
-      <li><a href="#portfolio" class="hover:text-[#272341]">Portfolio</a></li>
-      <li><a href="#contact" class="hover:text-[#272341]">Contact</a></li>
-    </ul>
-  </div>
+            <!-- mobile menu -->
+            <button id="menu-toggle" ☰ class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div id="mobile-menu"
+                class="md:hidden absolute top-14 right-4 z-50 bg-[#02AFB0] text-white px-6 py-4 hidden  ">
+                <ul class="flex flex-col space-y-4 text-sm font-medium ">
+                    <li><a href="#home" class="hover:text-[#272341]">Home</a></li>
+                    <li><a href="#about" class="hover:text-[#272341]">About</a></li>
+                    <li><a href="#services" class="hover:text-[#272341]">Services</a></li>
+                    <li><a href="#portfolio" class="hover:text-[#272341]">Portfolio</a></li>
+                    <li><a href="#contact" class="hover:text-[#272341]">Contact</a></li>
+                </ul>
+            </div>
 
         </nav>
         <div class="flex flex-col md:flex-row items-center h-full">
@@ -153,12 +155,39 @@
             </h3>
         </div>
 
-        <!-- First Project -->
+        <!-- My projects -->
         <div class="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-6 gap-6">
             <div class="md:w-1/2">
-                <h1 class="text-white font-bold text-xl font-mono">Project Title: Little Explorers School</h1>
+                <h1 class="text-white font-bold text-xl font-mono">Personal Project: Responsive Education-Themed Landing
+                    Page</h1>
                 <h2 class="text-white font-mono md:font-serif text-left w-full md:w-11/12 mt-2">
-                   Developed a library management application aimed at simplifying book cataloging, borrowing, and inventory tracking for educational institutions. I worked closely on the frontend, helping to create clean and functional layouts that aligned with user needs and institutional workflows.
+                    I built a responsive, mobile-first landing page themed around early childhood education. Implemented
+                    a clean layout using Tailwind CSS, focusing on modern design, accessibility, and scalability. The
+                    project highlights practical use of utility-first CSS, grid layouts, and content structure suitable
+                    for educational institutions.
+                </h2>
+                <a href="https://little-explorers-responsive.vercel.app//" target="_blank" rel="noopener noreferrer"
+                    class="bg-white mt-2 border border-[#272341] text-[#02AFB0] cursor-pointer px-2 py-2 font-mono
+                     font-bold hover:bg-[#02AFB0] hover:text-white transition duration-300 inline-block rounded">
+                    See Live
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="./images/pexels-yankrukov.jpg" alt="Project image"
+                    class="w-full max-w-[600px] object-contain">
+            </div>
+        </div>
+
+
+        <div class="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-6 gap-6">
+            <div class="md:w-1/2">
+                <h1 class="text-white font-bold text-xl font-mono">Project Title: Library Management Application</h1>
+                <h2 class="text-white font-mono md:font-serif text-left w-full md:w-11/12 mt-2">
+                    Developed a library management application designed to streamline book cataloging, borrowing, and
+                    inventory tracking for educational institutions. I contributed extensively to the frontend using
+                    React, focusing on building clean, responsive user interfaces that align with user needs and
+                    institutional workflows. The application supports efficient book management, real-time status
+                    updates, and intuitive navigation, enhancing the overall user experience.
                 </h2>
                 <a href="https://bookieappc.netlify.app//" target="_blank" rel="noopener noreferrer" class="bg-white mt-2 border border-[#272341] text-[#02AFB0] cursor-pointer px-2 py-2 font-mono
                      font-bold hover:bg-[#02AFB0] hover:text-white transition duration-300 inline-block rounded">
@@ -166,17 +195,20 @@
                 </a>
             </div>
             <div class="md:w-1/2 flex justify-center">
-                <img src="./images/libraryapp.png" alt="Project image"
-                    class="w-full max-w-[600px] object-contain">
+                <img src="./images/libraryapp.png" alt="Project image" class="w-full max-w-[600px] object-contain">
             </div>
         </div>
 
-        <!-- Second Project -->
         <div class="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-6 gap-6">
             <div class="md:w-1/2">
-                <h1 class="text-white font-bold text-xl font-mono">Project Title: Buyversity</h1>
+                <h1 class="text-white font-bold text-xl font-mono">Project Title: Buyversity – Campus Marketplace Web
+                    App</h1>
                 <h2 class="text-white font-mono md:font-serif text-left w-full md:w-11/12 mt-2">
-                   I was part of a team that developed an advertisement website designed for university students to buy and sell items on their campuses. I contributed to the project by designing the user interface and working on the frontend development.
+                    Collaborated with a development team to build Buyversity, an advertisement platform tailored for
+                    university students to buy and sell items within their campuses. I led the user interface design and
+                    contributed significantly to the frontend development using React, focusing on responsive layouts
+                    and seamless user interactions. The platform supports ad listings, image uploads, and
+                    campus-specific browsing, offering students a convenient and safe peer-to-peer marketplace.
                 </h2>
                 <a href="https://buyversityc.netlify.app/" target="_blank" rel="noopener noreferrer"
                     class="bg-white mt-2 border border-[#272341] text-[#02AFB0] cursor-pointer px-2 py-2 font-mono font-bold hover:bg-[#02AFB0] hover:text-white transition duration-300 inline-block rounded">
@@ -187,6 +219,29 @@
                 <img src="./images/buyversity.png" alt="Portfolio image" class="w-full max-w-[600px] object-contain">
             </div>
         </div>
+
+        <div class="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-6 gap-6">
+            <div class="md:w-1/2">
+                <h1 class="text-white font-bold text-xl font-mono"> Event Hive – Event Posting & Discovery Platform</h1>
+                <h2 class="text-white font-mono md:font-serif text-left w-full md:w-11/12 mt-2">
+                    Worked as part of a team to develop Event Hive, a web platform that enables users to create, post,
+                    and discover events. We followed a pre-designed UI layout from Figma, translating it into a
+                    functional and responsive interface using React. My role involved implementing the frontend based on
+                    the Figma design, ensuring consistency in styling, responsiveness across devices, and smooth user
+                    experience for both event creators and attendees.
+                </h2>
+                <a href="https://eventhivec.netlify.app/" target="_blank" rel="noopener noreferrer"
+                    class="bg-white mt-2 border border-[#272341] text-[#02AFB0] cursor-pointer px-2 py-2 font-mono
+                     font-bold hover:bg-[#02AFB0] hover:text-white transition duration-300 inline-block rounded">
+                    See Live
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="./images/event-hive.png" alt="Project image"
+                    class="w-full max-w-[600px] object-contain">
+            </div>
+        </div>
+
     </section>
 
     <section id="contact" class="bg-[#F5F5F5] px-6 md:px-12 py-16">
